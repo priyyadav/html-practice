@@ -72,39 +72,37 @@ not work but padding is work in spann-->
 
 
 
-<table >
+<table>
     <caption>table name</caption>
-    <thead >
+    <colgroup>
+        <col span="2" style="background-color:red">
+        <col style="background-color:yellow">
+    </colgroup>
+    <thead>
         <tr>
             <th>1</th>
             <th>2</th>
             <th>3</th>
         </tr>
-
     </thead>
     <tbody>
         <tr>
-<td rowspan="2">1</td>
-<td colspan="2">2</td>
-
+            <td rowspan="2">1</td>
+            <td colspan="2">2</td>
         </tr>
         <tr>
-       
             <td>2</td>
             <td>3</td>
-            </tr>
-        
-
+        </tr>
     </tbody>
     <tfoot>
         <tr>
-            <td>
-                total
-            </td>
+            <td>total</td>
             <td>100</td>
         </tr>
     </tfoot>
 </table>
+
 
 
 <!-- ul -->
@@ -115,7 +113,7 @@ not work but padding is work in spann-->
     <li>1</li>
 </ul> -->
 
-<ul style="list-style-type: lower-alpha;">
+<ul style="list-style-type: lower-alpha; color: red;">
     <li>1</li>
     <li>1</li>
     <li>1</li>
@@ -231,12 +229,23 @@ not work but padding is work in spann-->
       <option value="audi">Audi</option>
     </optgroup>
   </select>
-
+  <mmm>this is also tag or not</mmm>
 <button type="submit">submit</button>
 <!-- defult beahivuor is submit -->
 <!-- if we want regulat button withpur functioality -->
-
-
+<details>
+<summary>Epcot Center</summary>
+<p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international p
+    avilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<!-- &nbsp; to add spaces -->
+<!-- &lt; &gt -->
 </form>
+<figure>
+    <figcaption><del>image</del>image</figcaption>
+    <img src="https://html.com/wp-content/uploads/flamingo.jpg" atl="bird image" title="hello"/>
+</figure>
+<meter id="anna" min="0" max="100" value="95"></meter></p>
+<progress id="anna" min="0" max="100" value="95"></progress></p>
 </body>
 </html>
