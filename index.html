@@ -33,8 +33,9 @@ it is default page of a website -->
 </head>
 <body>
    <!-- heading -->
-   <h1>main heading
+   <h1>main heading &amp;
    </h1>
+   <iframe src="index.html" width="290px" height="290px"></iframe>
    <h2>
 Lorem ipsum dolor sit amet.
    </h2>
@@ -72,7 +73,7 @@ not work but padding is work in spann-->
 
 
 
-<table>
+<table cellpadding="10">
     <caption>table name</caption>
     <colgroup>
         <col span="2" style="background-color:red">
@@ -247,5 +248,23 @@ not work but padding is work in spann-->
 </figure>
 <meter id="anna" min="0" max="100" value="95"></meter></p>
 <progress id="anna" min="0" max="100" value="95"></progress></p>
+<input id="input" value="hello">
+<img src="workplace.jpg" alt="Workplace" usemap="#mmap">
+<map>
+    <area shape="rec" coords="34,44,270,350" href="computer.html"/>
+
+</map>
+<picture>
+    <source media="(min-width:650px)" srcset="img_pink_flowers.jpg">
+    <source media="(min-width:465px)" srcset="img_white_flower.jpg">
+    <img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+</picture>
+<video>
+    <source src="" type="mp4">
+</video>
+<script>
+    let i=document.getElementById("input");
+    i.value="priyanka"
+</script>
 </body>
 </html>
