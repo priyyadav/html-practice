@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Autocomplete Example</title>
+</head>
+<body>
+
+<form>
+  <label for="country">Choose a country:</label>
+  <input type="text" id="country" name="country" autocomplete="off" list="country-list">
+  <datalist id="country-list">
+    <option value="United States">
+    <option value="Canada">
+    <option value="United Kingdom">
+    <option value="Australia">
+    <option value="Germany">
+    <!-- Add more options as needed -->
+  </datalist>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
