@@ -1,14 +1,135 @@
-<!DOCTYPE html>
 <html>
-    <head>
-        <title>this</title>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width"/>
-        <meta name="keywords" content="html"/>
-        
-    </head>
-    <body>
-        <se
+<head>
+<style>
+    *
+    {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+    li
+    {
+        list-style: none;
+        color: white;
+        font-size: 24px;
+    }
+.dropdown {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  background-color: green;
+}
 
-    </body>
+.nav-item
+{
+position: relative;
+
+  padding: 20px 16px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: black;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 66px;
+
+
+}
+
+.item-items
+{
+    background-color: black;
+    padding: 20px 16px;
+}
+
+.nav-item:hover .dropdown-content {
+  display: block;
+}
+.item-items:hover 
+{
+    background-color: white;
+    color: black;
+    display: block;
+
+}
+
+.item-items:hover .item-items-content
+{
+    background-color: black;
+    color: wheat;
+    display: block;
+
+}
+.item-items-content
+{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 40px;
+    display: none;
+
+   
+}
+.item-items-content:hover{
+    background-color: white;
+  
+    color: black;
+}
+.item-items-contents
+{
+    padding: 20px 16px;
+    background-color: green;
+  
+  color: wheat;
+}
+
+.item-items-contents:hover
+{
+    background-color: white;
+  
+  color: black;
+}
+</style>
+</head>
+<body>
+
+
+<div >
+  <ul class="dropdown">
+    <li class="nav-item">a
+
+        <ul class="dropdown-content">
+            <li>1</li>
+        </ul>
+    </li>
+
+    <li class="nav-item">b
+        <ul class="dropdown-content">
+            <li class="item-items">2
+                <ul class="item-items-content">
+                    <li class="item-items-contents">abc</li>
+                    <li class="item-items-contents">abc</li>
+                    <li class="item-items-contents">abc</li>
+                    <li class="item-items-contents">abc</li>
+                </ul>
+            </li>
+            <li class="item-items">2</li>
+            <li class="item-items">2</li>
+            <li class="item-items">2</li>
+            <li class="item-items">2</li>
+        </ul>
+    </li>
+    <li class="nav-item">c
+        <ul class="dropdown-content">
+            <li>3</li>
+        </ul>
+    </li>
+    
+
+  </ul>
+</div>
+
+</body>
 </html>
